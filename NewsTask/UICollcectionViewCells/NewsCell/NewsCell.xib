@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewsCell" customModule="NewsTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ke-By-fdT">
+                        <rect key="frame" x="4" y="4" width="172" height="252"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elonmask-image" translatesAutoresizingMaskIntoConstraints="NO" id="4ph-q9-M5W">
+                                <rect key="frame" x="12" y="10" width="148" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="nie-fl-QEs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elon Musk Responds...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DT1-DX-Eek">
+                                <rect key="frame" x="8" y="143" width="156" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Tesla CEO wants the Philadelphia district attorney's case against his $1 million giveaway moved to federal court." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZL-IQ-MIQ">
+                                <rect key="frame" x="8" y="185" width="156" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nW-lr-FuT">
+                                <rect key="frame" x="8" y="162" width="73.666666666666671" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sean O'Driscoll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DET-8c-qbe">
+                                        <rect key="frame" x="3" y="3" width="67.666666666666671" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92549020049999997" green="0.92549020049999997" blue="0.92549020049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="1UA-jo-W2o"/>
+                                    <constraint firstAttribute="bottom" secondItem="DET-8c-qbe" secondAttribute="bottom" constant="3" id="KLc-tj-w4R"/>
+                                    <constraint firstItem="DET-8c-qbe" firstAttribute="centerX" secondItem="3nW-lr-FuT" secondAttribute="centerX" id="Zgs-bQ-HVs"/>
+                                    <constraint firstItem="DET-8c-qbe" firstAttribute="centerY" secondItem="3nW-lr-FuT" secondAttribute="centerY" id="c86-oZ-Boc"/>
+                                    <constraint firstItem="DET-8c-qbe" firstAttribute="top" secondItem="3nW-lr-FuT" secondAttribute="top" constant="3" id="fr4-6A-2UT"/>
+                                    <constraint firstAttribute="trailing" secondItem="DET-8c-qbe" secondAttribute="trailing" constant="3" id="h9r-tl-HwG"/>
+                                    <constraint firstItem="DET-8c-qbe" firstAttribute="leading" secondItem="3nW-lr-FuT" secondAttribute="leading" constant="3" id="wWa-Mv-TPC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4ph-q9-M5W" firstAttribute="top" secondItem="8ke-By-fdT" secondAttribute="top" constant="10" id="8sL-CR-eRa"/>
+                            <constraint firstItem="3nW-lr-FuT" firstAttribute="top" secondItem="DT1-DX-Eek" secondAttribute="bottom" constant="5" id="Bxl-U2-eCF"/>
+                            <constraint firstItem="3nW-lr-FuT" firstAttribute="leading" secondItem="DT1-DX-Eek" secondAttribute="leading" id="LLd-MC-EZx"/>
+                            <constraint firstItem="DT1-DX-Eek" firstAttribute="leading" secondItem="8ke-By-fdT" secondAttribute="leading" constant="8" id="Ov4-XJ-QLi"/>
+                            <constraint firstItem="4ph-q9-M5W" firstAttribute="leading" secondItem="8ke-By-fdT" secondAttribute="leading" constant="12" id="RDy-16-O7D"/>
+                            <constraint firstItem="0ZL-IQ-MIQ" firstAttribute="top" secondItem="3nW-lr-FuT" secondAttribute="bottom" constant="5" id="Tmr-YF-P1j"/>
+                            <constraint firstAttribute="trailing" secondItem="DT1-DX-Eek" secondAttribute="trailing" constant="8" id="gPk-Zq-5HB"/>
+                            <constraint firstItem="DT1-DX-Eek" firstAttribute="top" secondItem="4ph-q9-M5W" secondAttribute="bottom" constant="5" id="hZX-zM-yWa"/>
+                            <constraint firstItem="0ZL-IQ-MIQ" firstAttribute="leading" secondItem="DT1-DX-Eek" secondAttribute="leading" id="qZ0-aK-yEX"/>
+                            <constraint firstItem="0ZL-IQ-MIQ" firstAttribute="trailing" secondItem="DT1-DX-Eek" secondAttribute="trailing" id="qw1-nD-o7X"/>
+                            <constraint firstAttribute="trailing" secondItem="4ph-q9-M5W" secondAttribute="trailing" constant="12" id="s6F-3q-avW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8ke-By-fdT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="Vbe-BU-Gis"/>
+                <constraint firstAttribute="trailing" secondItem="8ke-By-fdT" secondAttribute="trailing" constant="4" id="Yck-TS-l3R"/>
+                <constraint firstItem="8ke-By-fdT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="nMK-lV-OtV"/>
+                <constraint firstAttribute="bottom" secondItem="8ke-By-fdT" secondAttribute="bottom" constant="4" id="yLj-5q-fv9"/>
+            </constraints>
+            <size key="customSize" width="194" height="224"/>
+            <connections>
+                <outlet property="descView" destination="3nW-lr-FuT" id="GPq-bg-hMW"/>
+                <outlet property="newDesc" destination="0ZL-IQ-MIQ" id="ryA-aR-XbK"/>
+                <outlet property="newImage" destination="4ph-q9-M5W" id="uYi-fD-Vkb"/>
+                <outlet property="newSec" destination="DET-8c-qbe" id="GWA-WV-Ovb"/>
+                <outlet property="newTitle" destination="DT1-DX-Eek" id="7HS-ew-3oC"/>
+                <outlet property="newsView" destination="8ke-By-fdT" id="hnE-A2-6dG"/>
+            </connections>
+            <point key="canvasLocation" x="77.862595419847324" y="48.591549295774648"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="elonmask-image" width="2500" height="1667"/>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
