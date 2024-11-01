@@ -24,5 +24,15 @@ class NewsCell: UICollectionViewCell {
         newsView.layer.cornerRadius = 12.0
         newImage.layer.cornerRadius = 10.0
     }
+    func config(model: Article){
+        self.newTitle.text = model.title ?? ""
+        self.newDesc.text = model.content ?? ""
+        self.newImage.loadDataUsingCacheWithUrlString(urlString: model.urlToImage ?? "")
+        self.newSec.text = model.author ?? ""
+    }
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        newImage.image = nil
+    }
 
 }

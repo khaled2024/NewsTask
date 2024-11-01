@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA1D6C392CD5533800E08C56 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1D6C382CD5533800E08C56 /* NetworkManager.swift */; };
+		EA1D6C3C2CD556DE00E08C56 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1D6C3B2CD556DE00E08C56 /* Constant.swift */; };
+		EA1D6C3E2CD5589200E08C56 /* NewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1D6C3D2CD5589200E08C56 /* NewModel.swift */; };
+		EA1D6C412CD55DF200E08C56 /* Extenstions+UiimageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1D6C402CD55DF200E08C56 /* Extenstions+UiimageView.swift */; };
+		EA1D6C432CD57B8000E08C56 /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1D6C422CD57B8000E08C56 /* DetailsModel.swift */; };
+		EA1D6C452CD5816C00E08C56 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1D6C442CD5816C00E08C56 /* FavouriteViewController.swift */; };
 		EA74E1AA2CD4308F0031B110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA74E1A02CD4308F0031B110 /* AppDelegate.swift */; };
 		EA74E1AD2CD4308F0031B110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA74E1A12CD4308F0031B110 /* Assets.xcassets */; };
 		EA74E1AF2CD4308F0031B110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA74E1A42CD4308F0031B110 /* LaunchScreen.storyboard */; };
@@ -14,13 +20,17 @@
 		EA74E1B82CD433700031B110 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA74E1B72CD433700031B110 /* MainViewController.swift */; };
 		EA74E1BF2CD43AA70031B110 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA74E1BD2CD43AA70031B110 /* NewsCell.swift */; };
 		EA74E1C02CD43AA70031B110 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA74E1BE2CD43AA70031B110 /* NewsCell.xib */; };
-		EA74E1C42CD43BB90031B110 /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA74E1C32CD43BB90031B110 /* Tajawal-Regular.ttf */; };
-		EA74E1C52CD43BB90031B110 /* Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA74E1C22CD43BB90031B110 /* Tajawal-Bold.ttf */; };
 		EA74E1C92CD4467B0031B110 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA74E1C82CD4467B0031B110 /* NewsDetailsViewController.swift */; };
 		EA74E1CB2CD447560031B110 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA74E1CA2CD447560031B110 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA1D6C382CD5533800E08C56 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EA1D6C3B2CD556DE00E08C56 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EA1D6C3D2CD5589200E08C56 /* NewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewModel.swift; sourceTree = "<group>"; };
+		EA1D6C402CD55DF200E08C56 /* Extenstions+UiimageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extenstions+UiimageView.swift"; sourceTree = "<group>"; };
+		EA1D6C422CD57B8000E08C56 /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		EA1D6C442CD5816C00E08C56 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		EA74E1882CD4305A0031B110 /* NewsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA74E1A02CD4308F0031B110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA74E1A12CD4308F0031B110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,8 +40,6 @@
 		EA74E1B72CD433700031B110 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA74E1BD2CD43AA70031B110 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		EA74E1BE2CD43AA70031B110 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
-		EA74E1C22CD43BB90031B110 /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Bold.ttf"; sourceTree = "<group>"; };
-		EA74E1C32CD43BB90031B110 /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
 		EA74E1C82CD4467B0031B110 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		EA74E1CA2CD447560031B110 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +55,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA1D6C372CD5532300E08C56 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EA1D6C382CD5533800E08C56 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EA1D6C3A2CD556D100E08C56 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EA1D6C3B2CD556DE00E08C56 /* Constant.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EA1D6C3F2CD55DE200E08C56 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA1D6C402CD55DF200E08C56 /* Extenstions+UiimageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA1D6C462CD5820500E08C56 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		EA74E17F2CD4305A0031B110 = {
 			isa = PBXGroup;
 			children = (
@@ -66,14 +105,17 @@
 		EA74E1A92CD4308F0031B110 /* NewsTask */ = {
 			isa = PBXGroup;
 			children = (
-				EA74E1C12CD43BB50031B110 /* Fonts */,
-				EA74E1BB2CD43A780031B110 /* UICollcectionViewCells */,
-				EA74E1B42CD430A70031B110 /* Recources */,
 				EA74E1B52CD430B40031B110 /* Delegates */,
+				EA74E1B42CD430A70031B110 /* Recources */,
+				EA1D6C462CD5820500E08C56 /* CoreData */,
+				EA1D6C3F2CD55DE200E08C56 /* Extensions */,
+				EA1D6C3A2CD556D100E08C56 /* Helper */,
+				EA1D6C372CD5532300E08C56 /* Network */,
+				EA74E1BB2CD43A780031B110 /* UICollcectionViewCells */,
 				EA74E1B62CD432430031B110 /* StoryBoards */,
+				EA74E1B12CD430940031B110 /* Model */,
 				EA74E1B32CD4309F0031B110 /* ViewModel */,
 				EA74E1B22CD4309A0031B110 /* View */,
-				EA74E1B12CD430940031B110 /* Model */,
 				EA74E1A22CD4308F0031B110 /* Info.plist */,
 			);
 			path = NewsTask;
@@ -82,6 +124,7 @@
 		EA74E1B12CD430940031B110 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA1D6C3D2CD5589200E08C56 /* NewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -91,6 +134,7 @@
 			children = (
 				EA74E1B72CD433700031B110 /* MainViewController.swift */,
 				EA74E1C82CD4467B0031B110 /* NewsDetailsViewController.swift */,
+				EA1D6C442CD5816C00E08C56 /* FavouriteViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				EA74E1CA2CD447560031B110 /* MainViewModel.swift */,
+				EA1D6C422CD57B8000E08C56 /* DetailsModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -143,15 +188,6 @@
 				EA74E1BE2CD43AA70031B110 /* NewsCell.xib */,
 			);
 			path = NewsCell;
-			sourceTree = "<group>";
-		};
-		EA74E1C12CD43BB50031B110 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				EA74E1C22CD43BB90031B110 /* Tajawal-Bold.ttf */,
-				EA74E1C32CD43BB90031B110 /* Tajawal-Regular.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +236,8 @@
 			);
 			mainGroup = EA74E17F2CD4305A0031B110;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EA74E1892CD4305A0031B110 /* Products */;
 			projectDirPath = "";
@@ -217,8 +255,6 @@
 			files = (
 				EA74E1AD2CD4308F0031B110 /* Assets.xcassets in Resources */,
 				EA74E1AF2CD4308F0031B110 /* LaunchScreen.storyboard in Resources */,
-				EA74E1C42CD43BB90031B110 /* Tajawal-Regular.ttf in Resources */,
-				EA74E1C52CD43BB90031B110 /* Tajawal-Bold.ttf in Resources */,
 				EA74E1C02CD43AA70031B110 /* NewsCell.xib in Resources */,
 				EA74E1B02CD4308F0031B110 /* Main.storyboard in Resources */,
 			);
@@ -231,11 +267,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1D6C3C2CD556DE00E08C56 /* Constant.swift in Sources */,
+				EA1D6C392CD5533800E08C56 /* NetworkManager.swift in Sources */,
+				EA1D6C452CD5816C00E08C56 /* FavouriteViewController.swift in Sources */,
 				EA74E1CB2CD447560031B110 /* MainViewModel.swift in Sources */,
 				EA74E1C92CD4467B0031B110 /* NewsDetailsViewController.swift in Sources */,
+				EA1D6C3E2CD5589200E08C56 /* NewModel.swift in Sources */,
 				EA74E1B82CD433700031B110 /* MainViewController.swift in Sources */,
 				EA74E1BF2CD43AA70031B110 /* NewsCell.swift in Sources */,
 				EA74E1AA2CD4308F0031B110 /* AppDelegate.swift in Sources */,
+				EA1D6C432CD57B8000E08C56 /* DetailsModel.swift in Sources */,
+				EA1D6C412CD55DF200E08C56 /* Extenstions+UiimageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +310,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9ZP4SG9WS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,6 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9ZP4SG9WS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
