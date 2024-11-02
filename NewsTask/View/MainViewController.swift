@@ -16,7 +16,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var newsCV: UICollectionView!
     @IBOutlet weak var sortDatePicker: UIDatePicker!
     let vm: MainViewModel = MainViewModel()
-    var sortingDateString: String?
+    var sortingDateString: String? = ""
     var searchText: String? = ""
     
     // MARK: - LifeCycle
@@ -33,16 +33,17 @@ class MainViewController: UIViewController {
         
     }
     // MARK: - Functions
-    
     func startAnimate(){
         self.loadingSpinner.isHidden = false
         self.loadingSpinner.startAnimating()
         self.newsCV.isHidden = true
     }
     func stopAnimate(){
-        self.loadingSpinner.isHidden = true
-        self.loadingSpinner.stopAnimating()
-        self.newsCV.isHidden = false
+        DispatchQueue.main.async {
+            self.loadingSpinner.isHidden = true
+            self.loadingSpinner.stopAnimating()
+            self.newsCV.isHidden = false
+        }
     }
     func setUpDesign(){
         self.navigationController?.navigationItem.largeTitleDisplayMode = .always
@@ -62,19 +63,14 @@ class MainViewController: UIViewController {
     private func getArticles(text: String,sortingFrom: String){
         self.newsCV.backgroundColor = .systemGroupedBackground
         startAnimate()
-        vm.getArticels(sortingFrom: vm.getCurrentDate(), searchText: searchBarr.text ?? "") { [weak self] in
+        vm.getArticels(sortingFrom: sortingFrom, searchText: text) { [weak self] in
             guard let self = self else { return }
             print(vm.articles.count)
             DispatchQueue.main.async {
                 if self.vm.articles.isEmpty{
-                    self.loadingSpinner.stopAnimating()
-                    self.emptyImage.isHidden = false
-                    self.loadingSpinner.isHidden = true
-                    self.newsCV.isHidden = true
-                }else{
-                    self.loadingSpinner.isHidden = false
-                    self.newsCV.isHidden = false
-                    self.emptyImage.isHidden = true
+                    AlertRepresenter.showAlert(with: "ERROR", mess: "There is no data", vc: self, action: { _ in
+                        
+                    })
                 }
                 self.newsCV.reloadData()
             }
@@ -88,15 +84,13 @@ class MainViewController: UIViewController {
     }
     @IBAction func dateChanged(_ sender: UIDatePicker) {
         let selectedDate = sender.date
-        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
         let sortingFrom: String = dateFormatter.string(from: selectedDate)
         self.sortingDateString = sortingFrom
         
-        print(sortingFrom)
-        self.getArticles(text: self.searchText ?? "", sortingFrom: sortingFrom)
+        self.getArticles(text: self.searchText ?? "", sortingFrom: self.sortingDateString == "" ? self.vm.getCurrentDate() : self.sortingDateString ?? "")
     }
 }
 // MARK: - UICollectionViewDelegate, UICollectionViewDataSource

@@ -18,7 +18,6 @@ class NewsDetailsViewController: UIViewController {
     @IBOutlet weak var newDetailView: UIView!
     
     var articel: Article!
-    let vm: DetailsModel = DetailsModel()
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +45,13 @@ class NewsDetailsViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func addFavTapped(_ sender: UIButton) {
-        vm.showAlert(with: self.articel.title ?? "", vc: self)
+        AlertRepresenter.showAlert(with: articel.title ?? "",mess: "Added to favourite successfully", vc: self, action: { _ in
+            CoreDataManager.shared.createArticle(
+                title: self.articel.title ?? "",
+                description: self.articel.description ?? "",
+                image: self.articel.urlToImage ?? "",
+                sec: self.articel.author ?? "")
+            self.navigationController?.popViewController(animated: true)
+        })
     }
 }

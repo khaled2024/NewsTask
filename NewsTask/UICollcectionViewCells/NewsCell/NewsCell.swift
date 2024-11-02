@@ -30,6 +30,12 @@ class NewsCell: UICollectionViewCell {
         self.newImage.loadDataUsingCacheWithUrlString(urlString: model.urlToImage ?? "")
         self.newSec.text = model.author ?? ""
     }
+    func config(model: ArticleModel){
+        self.newTitle.text = model.title ?? ""
+        self.newDesc.text = model.desc ?? ""
+        self.newImage.loadDataUsingCacheWithUrlString(urlString: model.imageURL ?? "")
+        self.newSec.text = model.sec ?? ""
+    }
     override func prepareForReuse() {
         super.prepareForReuse()
         newImage.image = nil
